@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Premium Coffee Landing Page</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header" id="header">
+      <nav class="navbar navbar-light bg-light fixed-top" id="nav-bar">
+        <a class="navbar-brand" href="#">
+          <img
+            id="header-img"
+            src="https://images.unsplash.com/photo-1467189484883-c40a85b9e708?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1549&q=80"
+            width="30"
+            height="30"
+            class="d-inline-block align-top"
+            alt=""
+          />
+          Premium Coffee
+        </a>
+
+        <!-- <ul class="navbar-nav mr-auto"> -->
+        <div class="nav-item active">
+          <a class="nav-link" href="#home"
+            >Home <span class="sr-only">(current)</span></a
+          >
+        </div>
+        <div class="nav-item">
+          <a class="nav-link" href="#history">History</a>
+        </div>
+        <div class="nav-item">
+          <a class="nav-link" href="#contactUs">Contact</a>
+        </div>
+        <!-- </ul> -->
+        <!-- <span class="navbar-text">
+              <ul>
+                <li>
+                  Productos
+                </li>
+                <li>Precios</li></li>
+              </ul>
+      
+              Navbar text with an inline element
+            </span> -->
+      </nav>
+    </header>
+
+    <div class="container">
+      <h1 id="home" class="heading">Premium Coffee</h1>
+      <p>
+        <strong>Premium Coffee</strong> from the very best Costa Rica mountains.
+        Our products have been named one of the most exquisit coffees in the
+        world. We have won five of the last eight <i>Best Coffee Award </i>and
+        we always thrive to achive excellence.
+      </p>
+      <div class="grid">
+        <div class="box">
+          <h4>Premium Coffee 1</h4>
+          <img
+            class="imagen"
+            src="https://source.unsplash.com/collection/231233/175x150"
+          />
+          <p>Premium #1</p>
+        </div>
+        <div class="box">
+          <h4>Premium Coffee 2</h4>
+          <img
+            class="imagen"
+            src="https://source.unsplash.com/collection/2096506/175x150"
+          />
+          <p>Premium #2</p>
+        </div>
+        <div class="box">
+          <h4>Premium Coffee 3</h4>
+          <img
+            class="imagen"
+            src="https://source.unsplash.com/collection/3491429/175x150"
+          />
+          <p>Premium #3</p>
+        </div>
+      </div>
+      <div class="coffeeVid">
+        <h1 class="heading" id="history">Our History</h1>
+        <div class="center">
+          <iframe
+            id="video"
+            width="720"
+            height="360"
+            src="https://www.youtube.com/embed/on5AHXezSG8"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+      <h1 class="heading">Contact Information and Location</h1>
+      <div class="map" id="contactUs">
+        <div class="info contact">
+          <h3><i class="far fa-address-card"></i> Get in touch</h3>
+          <h4><i class="fas fa-phone-square"></i> (506)-2222-0000</h4>
+          <h4>
+            <i class="far fa-envelope" aria-hidden="true"> </i>
+            premiumCoffeeCR@email.com
+          </h4>
+          <form id="form" name="contact-form" action="mail.php" method="POST">
+            <!--Grid row-->
+            <div class="row">
+              <!--Grid column-->
+              <div class="col-md-6">
+                <div class="md-form mb-0">
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    class="form-control"
+                    required
+                  />
+                  <label for="name" class="">Your name</label>
+                </div>
+              </div>
+              <!--Grid column-->
+
+              <!--Grid column-->
+              <div class="col-md-6">
+                <div class="md-form mb-0">
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    class="form-control"
+                    required
+                    placeholder="name@email.com"
+                  />
+                  <label for="email" class="">Your email</label>
+                </div>
+              </div>
+              <!--Grid column-->
+            </div>
+            <!--Grid row-->
+
+            <!--Grid row-->
+            <div class="row">
+              <div class="col-md-12">
+                <div class="md-form mb-0">
+                  <input
+                    type="text"
+                    id="input"
+                    name="subject"
+                    class="form-control"
+                    required
+                  />
+                  <label for="subject" class="">Subject</label>
+                </div>
+              </div>
+            </div>
+            <!--Grid row-->
+
+            <!--Grid row-->
+            <div class="row">
+              <!--Grid column-->
+              <div class="col-md-12">
+                <div class="md-form">
+                  <textarea
+                    type="text"
+                    id="message"
+                    name="message"
+                    rows="2"
+                    class="form-control md-textarea"
+                    required
+                  ></textarea>
+                  <label for="message">Your message</label>
+                </div>
+              </div>
+            </div>
+            <!--Grid row-->
+            <input id="submit" type="submit" value="Submit" class="btn btn-primary"></input>
+            <!-- <button class="btn btn-primary">Submit</button> -->
+          </form>
+        </div>
+        <div class="mapouter contact">
+          <div class="gmap_canvas">
+            <iframe
+              width="90%"
+              height="70%"
+              id="gmap_canvas"
+              src="https://maps.google.com/maps?q=tarrazu%2C%20costa%20rica&t=&z=13&ie=UTF8&iwloc=&output=embed"
+              frameborder="0"
+              scrolling="no"
+              marginheight="0"
+              marginwidth="0"
+            ></iframe>
+          </div>
+          <style>
+            .mapouter {
+              position: relative;
+              text-align: right;
+              height: 500px;
+              width: 600px;
+            }
+            .gmap_canvas {
+              overflow: hidden;
+              background: none !important;
+              height: 500px;
+              width: 600px;
+            }
+          </style>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <footer>
+    <p class="text-center">
+      Copyright ©<a href="https://www.freecodecamp.com/zepablo" target="_blank">
+        Jose Montero</a
+      >
+      2019
+    </p>
+  </footer>
+</html>
